@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('video');
+  this.route('best-websites');
+  this.route('find-a-race');
+  this.route('instagrams-to-follow');
+  this.route('get-out-and-run');
 });
 
 export default Router;
