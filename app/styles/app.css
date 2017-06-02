@@ -1,3 +1,10 @@
-body : {
-  color: blue;
+@import "bootstrap";
+
+/*
+* {
+  background-color: grey;
+}*/
+
+.title {
+  color : red;
 }

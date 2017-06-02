@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('find-a-race');
   this.route('instagrams-to-follow');
   this.route('get-out-and-run');
+  this.route('register');
 });
 
 export default Router;
