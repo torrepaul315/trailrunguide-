@@ -1,7 +1,21 @@
 export default function() {
 
-  // These comments are here to help you get started. Feel free to delete them.
+  this.namespace = "/api";
 
+  this.get('/goat', function (){
+      return {
+        data: [{
+          type : 'kilian J info',
+          firstName: 'Kilian',
+          lastName: 'Jornet Burgada',
+          status: 'G.O.A.T',
+          image: ''
+        }]
+      }
+
+
+
+  })
   /*
     Config (with defaults).
 
