@@ -1,6 +1,7 @@
 export default function() {
 
-  this.namespace = "/api";
+  // this.namespace = "/api";
+  // this.urlPrefix = 'http://localhost:3000';
 
   this.get('/goat', function (){
       return {
@@ -11,11 +12,11 @@ export default function() {
           status: 'G.O.A.T',
           image: ''
         }]
-      }
+      };
 
 
 
-  })
+  });
   /*
     Config (with defaults).
 
