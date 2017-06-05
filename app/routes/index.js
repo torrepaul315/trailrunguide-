@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('/goat');
+    return this.get('store').findAll('goat');
    }
 // I had this ('store')
 
