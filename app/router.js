@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('instagrams-to-follow');
   this.route('get-out-and-run');
   this.route('register');
+  this.route('login');
 });
 
 export default Router;

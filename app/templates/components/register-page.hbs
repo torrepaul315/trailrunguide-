@@ -5,6 +5,20 @@
 <div class="row text-center">
 <div class="col-lg-3"></div>
 <div class="col-lg-6 text-center">
+  <div class="menu">
+  …
+  {{#if session.isAuthenticated}}
+    <a {{action 'invalidateSession'}}>Logout</a>
+  {{else}}
+    {{#link-to 'login'}}Login{{/link-to}}
+  {{/if}}
+</div>
+<!-- <div class="main">
+
+</div> -->
+
+
+
 <form {{action 'registerForm' on="submit"}} >
   <div class="form-group">
 
