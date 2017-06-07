@@ -5,14 +5,27 @@
 <div class="row text-center">
 <div class="col-lg-3"></div>
 <div class="col-lg-6 text-center">
-<form>
+<form {{action 'registerForm' on="submit"}} >
   <div class="form-group">
+
+    <label for="exampleInputEmail1">Name:</label>
+    <br/>
+    {{input placeholder="your name" value=name}}
+    <br/>
     <label for="exampleInputEmail1">Email address</label>
+    <br/>
+
+    {{input placeholder="entah email" width="50%" value=email}}
+    <br/>
+
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">Password</label>
+    <br/>
+    {{input placeholder="password" width="100%" value=password}}
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
   </div>
   <div class="form-group">
@@ -73,5 +86,6 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+  <button type="login" class="btn btn-warning">Login</button>
 </div>
 </div>

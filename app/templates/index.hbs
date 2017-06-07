@@ -4,14 +4,25 @@
 <h1>testing!</h1>
 
 <!-- {{example-component title="Top Websites"   people=model}} -->
+<ul>
+  {{#each model as |goat|}}
+    <li>{{goat.firstName}}</li>
+    <li>{{goat.lastName}}</li>
+    <li>{{goat.status}}</li>
+    <img src="{{goat.image}}">
+  {{/each}}
+</ul>
 
-<!-- {{model.firstName}} -->
 
-{{model.data.lastName}}
-
+{{data.attributes.last-name}}
 <br/>
+{{goat.data.lastName}}
+{{model.goat.lastName}}
 
 {{model.data.firstName}}
+<br/>
+
+{{model.data.attributes.firstName}}
 
 
 

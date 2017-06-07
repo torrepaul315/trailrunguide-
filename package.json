@@ -46,6 +46,7 @@
   },
   "private": true,
   "dependencies": {
+    "auth0-lock": "^10.16.0",
     "knex": "^0.13.0"
   }
 }

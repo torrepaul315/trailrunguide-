@@ -6,13 +6,25 @@
 
 <h3>{{info}}</h3>
 
-<<ul>
+<ul>
   {{#each people as |person|}}
-    <li {{action "showPerson" person}}>{{person}}</li>
+    <li {{action "showPerson" person}}>{{person.name}}</li>
+    <iframe width="853" height="480" src={{person.src}} frameborder="0" allowfullscreen></iframe>
+
+
+
   {{/each}}
 </ul>
 
-<div id="player"></div>
+<!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLZS_k6BQeW_KnXm44s7PORPsg3Hv6f3X5"frameborder="0" allowfullscreen></iframe>
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/wUpRzyUrrlw" frameborder="0" allowfullscreen></iframe>
+
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLF3GWOzYkVR3HVr9dlKBjKp-hlU7ZeayJ" frameborder="0" allowfullscreen></iframe> -->
+
+
+<!-- <div id="player"></div>
 
     <script>
       // 2. This code loads the IFrame Player API code asynchronously.
@@ -55,4 +67,4 @@
       function stopVideo() {
         player.stopVideo();
       }
-    </script>
+    </script> -->
