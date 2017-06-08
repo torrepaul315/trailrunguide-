@@ -6,11 +6,23 @@
 }*/
 
 .title {
-  color : red;
+  font-family: 'Signika', sans-serif;
+  font-size: 50px;
+  color:white;
 }
 
 
 #map {
-  height : 400px;
+  height : 500px;
 
+}
+
+.navbar {
+  color: white;
+  background-color: #1798c1;
+}
+
+.horiz {
+  margin-left: 170px;
+  font-size: 24px;
 }

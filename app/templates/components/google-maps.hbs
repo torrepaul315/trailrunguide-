@@ -1,6 +1,6 @@
 <!-- {{yield}} -->
 
-
+<div class="container">
 
 <h2 {{action "redirect" title}}>hello {{title}}</h2>
 
@@ -12,5 +12,8 @@
   {{/each}} -->
 </ul>
 
-<h3 {{action "initMap"}}>Let's load a map!</h3>
- <div id="map">hello!</div>
+<button type="button" class="btn btn-success btn-lg"{{action "initMap"}}>Let's find a trail to go run!</button>
+ <div id="map"></div>
+
+
+</div>

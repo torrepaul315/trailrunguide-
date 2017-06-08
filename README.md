@@ -1,3 +1,18 @@
+notes/todos
+
+add icons to nav bar!
+
+video page
+  - work on getting araivaipa running to be a
+
+map page
+  - instead of button loading the map and then also making the api call, why don't we just load the map, and then, recenter with the coordinates of the closest place nearby? 
+
+rss feeds- that will be the point of my back end!
+
+
+
+
 # trailrunguide
 
 This README outlines the details of collaborating on this Ember application.

@@ -1,21 +1,25 @@
 {{yield}}
 <!-- what is this yield element? -->
+<div class ="container">
 
-<h2>{{title}}</h2>
+<h2 class="text-center">{{title}}</h2>
 
 
 <h3>{{info}}</h3>
 
-<ul>
-  {{#each people as |person|}}
-    <li {{action "showPerson" person}}>{{person.name}}</li>
-    <iframe width="853" height="480" src={{person.src}} frameborder="0" allowfullscreen></iframe>
+  <div class="text-center panel">
+    {{#each people as |person|}}
+
+      <h3 class="vtitle"{{action "showPerson" person}}>{{person.name}}</h3>
+      <hr/>
+      <h4 class="blurb">{{person.blurb}}</h4>
+      <iframe width="853" height="480" src={{person.src}} frameborder="0" allowfullscreen></iframe>
 
 
 
-  {{/each}}
-</ul>
-
+    {{/each}}
+  </div>
+</div>
 <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/videoseries?list=PLZS_k6BQeW_KnXm44s7PORPsg3Hv6f3X5"frameborder="0" allowfullscreen></iframe>
 
 <iframe width="853" height="480" src="https://www.youtube.com/embed/wUpRzyUrrlw" frameborder="0" allowfullscreen></iframe>
