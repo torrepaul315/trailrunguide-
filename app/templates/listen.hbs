@@ -1,0 +1,24 @@
+{{outlet}}
+
+{{yield}}
+<!-- what is this yield element? -->
+<div class ="container">
+
+<h2 class="text-center">{{title}}</h2>
+
+
+<h3>{{info}}</h3>
+
+  <div class="text-center panel">
+    {{#each people as |person|}}
+
+      <h3 class="vtitle"{{action "showPerson" person}}>{{person.name}}</h3>
+      <hr/>
+      <h4 class="blurb">{{person.blurb}}</h4>
+      <iframe width="853" height="480" src={{person.src}} frameborder="0" allowfullscreen></iframe>
+
+
+
+    {{/each}}
+  </div>
+</div>

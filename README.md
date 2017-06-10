@@ -1,4 +1,17 @@
 notes/todos
+saturday notes -
+thing to go work on today
+1- build out the rest of the basic visual content!
+2- small- strava button!
+2.5- improve google maps functionality!
+2.75- get an action going up of some kind!
+3- work on back end
+4- auth!
+5-deploy to
+6- outside of the whole chatbot idea, any other api's to add in? 
+
+
+
 
 add icons to nav bar!
 
@@ -6,7 +19,12 @@ video page
   - work on getting araivaipa running to be a
 
 map page
-  - instead of button loading the map and then also making the api call, why don't we just load the map, and then, recenter with the coordinates of the closest place nearby? 
+  - instead of button loading the map and then also making the api call, why don't we just load the map, and then, recenter with the coordinates of the closest place nearby?
+
+  improve the markers!
+  A- either show numbers 1 thru 5 and render some additional info below, or
+  B- make the markers into useful tack points rendering more info/ a link to additional info on the hike!
+
 
 rss feeds- that will be the point of my back end!
 

@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('get-out-and-run');
   this.route('register');
   this.route('login');
+  this.route('listen');
 });
 
 export default Router;
