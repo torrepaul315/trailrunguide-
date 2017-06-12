@@ -15,6 +15,7 @@ Router.map(function() {
   this.route('register');
   this.route('login');
   this.route('listen');
+  this.route('chat-bot');
 });
 
 export default Router;
