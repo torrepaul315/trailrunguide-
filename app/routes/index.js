@@ -1,16 +1,16 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
-    return this.get('store').findAll('goat');
-  },
-
-  actions: {
-    chatWithBot: function (chatReq) {
-      console.log("second" + chatReq);
-      return this.post('store').insert(chatReq);
-    }
-  }
+  // model() {
+  //   return this.get('store').findAll('goat');
+  // },
+  //
+  // actions: {
+  //   chatWithBot: function (chatReq) {
+  //     console.log("second" + chatReq);
+  //     return this.post('store').insert(chatReq);
+  //   }
+  // }
 //I had this ('store')
 
   // model() {

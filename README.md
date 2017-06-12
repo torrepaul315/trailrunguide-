@@ -8,9 +8,10 @@ thing to go work on today
 3- work on back end
 4- auth!
 5-deploy to
-6- outside of the whole chatbot idea, any other api's to add in? 
+6- outside of the whole chatbot idea, any other api's to add in?
 
 
+switched 3050 to 6001 in project! 
 
 
 add icons to nav bar!

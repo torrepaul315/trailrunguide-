@@ -2,6 +2,8 @@
 
 module.exports = function(environment) {
   var ENV = {
+    'ember-websockets': {
+    socketIO: true},
     modulePrefix: 'trailrunguide',
     environment: environment,
     rootURL: '/',
@@ -20,7 +22,18 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+    contentSecurityPolicy: {
+              'default-src': "'none'",
+              'script-src': "'self' 'unsafe-inline' 'unsafe-eval'",
+              'font-src': "'self'",
+              'connect-src': "'self' ws://localhost:6001 localhost:6001",
+              'img-src': "'self'",
+              'report-uri':"'localhost'",
+              'style-src': "'self' 'unsafe-inline'",
+              'frame-src': "'none'"
+            }
+
   };
 
   if (environment === 'development') {
