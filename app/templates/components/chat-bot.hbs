@@ -8,6 +8,14 @@
   <img src="images/seattleTom.png"
   width="250px">
   </div>
+  <div class="response-text">
+    {{#each response as |reply|}}
+
+      <h3 class="vtitle"{{action "showPerson" person}}>{{reply.text}}</h3>
+      <hr/>
+    {{/each}}
+  </div>
+
   <form {{action 'askBot' on="submit"}} class="form-inline">
   <div class="col-9" style="padding-right: 5px; padding-left: 65px;">
     {{input value=botRequest class='form-control'}}

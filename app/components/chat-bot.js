@@ -2,6 +2,9 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
+  //  in order to invert the order -  ember.computed.sort (by timestamp or something similar)
+  //push message responses into this array, then use the handebars for eacth to loop through and display them!
+  //well this didn't work as hoped!  responses:[],
   // actions: {
  /* basic setup where I got actions to bubble up*/
     // askBot: function(){
@@ -57,7 +60,16 @@ export default Ember.Component.extend({
    },
 
    myMessageHandler(event) {
+     var scrub = JSON.parse(event.data);
      console.log(`Message: ${event.data}`);
+    //  console.log(scrub.text);
+     var response = scrub.text;
+     console.log(response);
+
+    //  index.model.responses.insert(response);
+     index.model.set("text", response);
+    //  console.log(model.responses);
+
    },
 
    myCloseHandler(event) {
@@ -65,6 +77,8 @@ export default Ember.Component.extend({
    },
 
    actions: {
+
+
      askBot: function() {
       const socket = this.get('socketRef');
       var message = this.get('botRequest');
@@ -74,7 +88,12 @@ export default Ember.Component.extend({
         }
        else {
        socket.send(JSON.stringify({type: 'msg', text:message, userId: "z0EwnrbW"}));
-        }
+       }
+       //this is where you should add the text submitted to the chat list....think! you've been able to get text to bubble up through actions before like on the apply forms page- try to replicate that code?
+
+       //then...ideally, that code should be replicable with the bot response!
+       
+        this.set('botRequest','')
       }
     }
  });
