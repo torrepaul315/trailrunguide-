@@ -65,9 +65,12 @@ export default Ember.Component.extend({
     //  console.log(scrub.text);
      var response = scrub.text;
      console.log(response);
+     this.sendAction('action', response);
+///
 
+/* these didn't bubble up the response...trying to make sendAction work!*/
     //  index.model.responses.insert(response);
-     index.model.set("text", response);
+    //  index.model.set("text", response);
     //  console.log(model.responses);
 
    },
@@ -91,8 +94,8 @@ export default Ember.Component.extend({
        }
        //this is where you should add the text submitted to the chat list....think! you've been able to get text to bubble up through actions before like on the apply forms page- try to replicate that code?
 
-       //then...ideally, that code should be replicable with the bot response!
-       
+       //then...ideally, that code should be replicable with the bot response!  hmm, chatWithBot didn't work trying 'action'
+        this.sendAction('action', this.get('botRequest'));
         this.set('botRequest','')
       }
     }

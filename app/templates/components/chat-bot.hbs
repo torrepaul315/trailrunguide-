@@ -8,24 +8,38 @@
   <img src="images/seattleTom.png"
   width="250px">
   </div>
-  <div class="response-text">
-    {{#each response as |reply|}}
 
-      <h3 class="vtitle"{{action "showPerson" person}}>{{reply.text}}</h3>
-      <hr/>
+        {{#each response as |reply|}}
+
+          <div class="botReplyText"></div>
+
+            <div class="humanAsk">
+              <div class="container">
+                <div class="row">
+
+
+                <h4 class="vtitle"{{action "showPerson" person}}>{{reply.text}}</h4>
+
+                  </div>
+                </div>
+              </div>
+
+
+
     {{/each}}
-  </div>
+
 
   <form {{action 'askBot' on="submit"}} class="form-inline">
   <div class="col-9" style="padding-right: 5px; padding-left: 65px;">
     {{input value=botRequest class='form-control'}}
     <!-- <input id="message" class="form-control" aria-label="Enter your message..." class="input_text" type="text" autocomplete="off" name="message" placeholder="Enter your message..." v-model="message" v-on:keyup.13="submitMessage"> -->
-  </div>
-  <br>
-  <br>
-    <div class="col-2" style="padding-left: 5px">
-        <button id="sendmessage" class="btn btn-warning" type="submit" class="button_primary" v-on:click="submitMessage">start chat</button>
-    </div>
+      </div>
+      <br>
+      <br>
+        <div class="col-2" style="padding-left: 5px">
+            <button id="sendmessage" class="btn btn-warning" type="submit" class="button_primary" v-on:click="submitMessage">Chat!</button>
+        </div>
 
   </form>
+
 </div>

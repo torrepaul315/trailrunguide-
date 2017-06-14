@@ -4,7 +4,17 @@
 * {
   background-color: grey;
 }*/
+html {
+  height:100%;
+}
 
+body {
+  height:100%;
+  /*background-color: red;*/
+}
+h1 {
+  color:red;
+}
 .title {
   font-family: 'Signika', sans-serif;
   font-size: 50px;
@@ -19,11 +29,15 @@
 
 .navbar {
   color: white;
-  background-color: #1798c1;
+  background-color: rgb(252,94,27);
+  border-radius: 0px;
+  border: 0px;
+  font-family: "Oswald", sans-serif;
 }
 
 .horiz {
-  margin-left: 170px;
+  color:white;
+  margin-left: 210px;
   font-size: 24px;
 }
 
@@ -35,4 +49,33 @@
    border-color: lightgrey;
    border-style: solid;
    border-radius: 5px;
+}
+
+.maintitle {
+  font-size: 60px;
+  color: white;
+}
+
+.botReplyText {
+  font-color:red
+}
+
+.jumbotron {
+  height:100%
+}
+.indexbackground {
+  margin-top: -20px;
+  opacity: .9;
+/*../images/montblanc.jpg*/
+  background: url("../images/woodedTrail.jpg");
+  /*url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3NWIuWrCoufQqJtugeTYt40oDWbBDxWmdOz86yuKHkuVDC1Zv3Q");*/
+
+   /*url("https://www.chamonix.net/sites/default/files/nodeimages/trail1.jpg?itok=i-5JQUam");*/
+
+  /*background-position: center;*/
+  background-size:cover;
+  height:100vh;
+  /*background-repeat: no-repeat;
+  overflow:hidden;
+  height:100%;*/
 }
