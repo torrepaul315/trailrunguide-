@@ -2,44 +2,47 @@
 
 
 <div class="bot">
-  <h1>{{title}}</h1>
+  <!-- <h1>{{title}}</h1> -->
   <!-- i had chat after 'askBot on the line below..n/s why though!' -->
   <div class="col-lg-2">
-  <img id="dTomster" src="images/seattleTom.png"
+    <img id="dTomster" src="images/seattleTom.png"
   width="250px">
+    <form {{action 'askBot' on="submit"}} class="form-inline">
+  <!-- <div class="col-lg-9" style="padding-right: 5px; padding-left: 65px;"> -->
+    {{input value=botRequest class='form-control' placeholder="Chat with TrailTom!"}}
+    <!-- <input id="message" class="form-control" aria-label="Enter your message..." class="input_text" type="text" autocomplete="off" name="message" placeholder="Enter your message..." v-model="message" v-on:keyup.13="submitMessage"> -->
+
+      <br>
+      <br>
+
+            <button id="sendmessage" class="btn btnChat" type="submit" class="button_primary" v-on:click="submitMessage">Chat!</button>
+
+
+  </form>
+
+    <!-- <div class="col-2" style="padding-left: 5px"></div>  -->
+
   </div>
+  <div class="col-lg-2"></div>
+  <div class="col-lg-8 chatBox">
 
         {{#each response as |reply|}}
 
 
 
-            <div class="humanAsk">
-              <div class="container">
-                <div class="row">
+              <!-- <div class="container"> -->
+                <div class="row humanAsk">
 
 
                 <h4 class="vtitle"{{action "showPerson" person}}>{{bot-text reply.text}}</h4>
 
                   </div>
-                </div>
-              </div>
-
 
 
     {{/each}}
 
 
-  <form {{action 'askBot' on="submit"}} class="form-inline">
-  <div class="col-9" style="padding-right: 5px; padding-left: 65px;">
-    {{input value=botRequest class='form-control'}}
-    <!-- <input id="message" class="form-control" aria-label="Enter your message..." class="input_text" type="text" autocomplete="off" name="message" placeholder="Enter your message..." v-model="message" v-on:keyup.13="submitMessage"> -->
-      </div>
-      <br>
-      <br>
-        <div class="col-2" style="padding-left: 5px">
-            <button id="sendmessage" class="btn btn-warning" type="submit" class="button_primary" v-on:click="submitMessage">Chat!</button>
-        </div>
 
-  </form>
 
+  </div>
 </div>
