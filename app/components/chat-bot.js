@@ -27,7 +27,7 @@ export default Ember.Component.extend({
        will retrieve a cached websocket if one exists or in this case it
        will create a new one for us.
      */
-     const socket = this.get('websockets').socketFor('ws://trailchatbot.herokuapp.com');
+     const socket = this.get('websockets').socketFor('wss://trailchatbot.herokuapp.com');
 
      /*
        3. The next step is to define your event handlers. All event handlers
