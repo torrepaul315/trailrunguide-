@@ -16,9 +16,46 @@ h1 {
   color:red;
 }
 .title {
-  font-family: 'Signika', sans-serif;
-  font-size: 50px;
+    /*font-family: 'Permanent Marker', cursive;*/
+
+
+    /*font-family: 'Rock Salt', cursive;*/
+
+
+
+    font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 65px;
+
+
+  color:black;
+}
+#trg {
+  color:black;
+}
+#maintitle {
+  text-shadow: 0 0 30px rgba(255,255,255, 0.5);
+  font-size:125px;
+  color:rgb(252,94,27);
+  font-style: italic;
+  border-radius: 4px;
+  margin-top: -20px;
+
+  /*font-family: 'Permanent Marker', cursive;*/
+
+
+  /*font-family: 'Rock Salt', cursive;*/
+
+
+
+  font-family: 'Love Ya Like A Sister', cursive;
+
+}
+/*a {
   color:white;
+}*/
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
 }
 
 
@@ -37,7 +74,7 @@ h1 {
 
 .horiz {
   color:white;
-  margin-left: 210px;
+  margin-left: 415px;
   font-size: 24px;
 }
 
@@ -56,8 +93,8 @@ h1 {
   color: white;
 }
 
-.botReplyText {
-  font-color:red
+#dTomster {
+  margin-left: -40px;
 }
 
 .jumbotron {
@@ -78,4 +115,11 @@ h1 {
   /*background-repeat: no-repeat;
   overflow:hidden;
   height:100%;*/
+}
+.humanAsk {
+  color: white;
+}
+
+.humanAsk:nth-child(2n){
+  color:red
 }

@@ -4,21 +4,21 @@
 <div class="bot">
   <h1>{{title}}</h1>
   <!-- i had chat after 'askBot on the line below..n/s why though!' -->
-  <div class="col-lg-3">
-  <img src="images/seattleTom.png"
+  <div class="col-lg-2">
+  <img id="dTomster" src="images/seattleTom.png"
   width="250px">
   </div>
 
         {{#each response as |reply|}}
 
-          <div class="botReplyText"></div>
+
 
             <div class="humanAsk">
               <div class="container">
                 <div class="row">
 
 
-                <h4 class="vtitle"{{action "showPerson" person}}>{{reply.text}}</h4>
+                <h4 class="vtitle"{{action "showPerson" person}}>{{bot-text reply.text}}</h4>
 
                   </div>
                 </div>
