@@ -15,6 +15,15 @@ body {
 h1 {
   color:red;
 }
+
+#gmaps {
+    padding:0px;
+    margin:0px;
+}
+#logoEx {
+  color:rgb(252,94,27);
+  font-size:250px;
+}
 .title {
     /*font-family: 'Permanent Marker', cursive;*/
 
@@ -70,6 +79,7 @@ h1 {
   border-radius: 0px;
   border: 0px;
   font-family: "Oswald", sans-serif;
+  margin-bottom: 0px;
 }
 
 .horiz {
@@ -101,7 +111,7 @@ h1 {
   height:100%
 }
 .indexbackground {
-  margin-top: -20px;
+  /*margin-top: -20px;*/
   opacity: .9;
 /*../images/montblanc.jpg*/
   background: url("../images/woodedTrail.jpg");
